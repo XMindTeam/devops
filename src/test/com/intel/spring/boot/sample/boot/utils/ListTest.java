@@ -12,7 +12,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.example.list.List;
 
 public class ListTest {
     private List list;
@@ -60,5 +59,9 @@ public class ListTest {
         assertEquals(true, list.contains("yes"));
         assertEquals(true, list.contains("Yolo"));
         assertEquals(false, list.contains("OMG"));
+    }
+
+    public void testPush() {
+        assertEquals(0,0);
     }
 }
