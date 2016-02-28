@@ -4,6 +4,10 @@ script: mvn -q clean install
 branches:
   only:
     - develop
+services:
+  - mysql
+before_script:
+  - mysql -u root -p cKp123654pKc -e 'create database spring_boot;'
 notifications:
   email:
     - ckp_henu@163.com
