@@ -1,0 +1,4 @@
+mysql: &mysql
+  adapter: mysql2
+  username: root
+  password: cKp123654pKc

@@ -10,7 +10,7 @@ branches:
 services:
   - mysql
 before_script:
-  - mysql -u root -pcKp123654pKc -e 'create database spring_boot;'
+  - mysql -e 'create database spring_boot'
 
 notifications:
   email:
