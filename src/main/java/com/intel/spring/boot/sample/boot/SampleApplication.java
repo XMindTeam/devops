@@ -15,8 +15,6 @@ import javax.servlet.ServletContextListener;
 /**
  * Created by Ecic Chen on 2016/1/29.
  */
-@SpringBootApplication
-@Configuration
 @ComponentScan
 @EnableAutoConfiguration
 public class SampleApplication {
