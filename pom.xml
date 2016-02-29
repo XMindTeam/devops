@@ -162,6 +162,10 @@
       <id>spring-milestones</id>
       <url>http://repo.spring.io/milestone</url>
     </pluginRepository>
+    <pluginRepository>
+      <id>Codehaus repository</id>
+      <url>http://repository.codehaus.org/</url>
+    </pluginRepository>
   </pluginRepositories>
 
 </project>
