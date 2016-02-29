@@ -12,6 +12,9 @@ services:
 before_script:
   - mysql -e 'create database spring_boot'
 
+after_success:
+- mvn clean cobertura:cobertura coveralls:report
+
 notifications:
   email:
     - ckp_henu@163.com
