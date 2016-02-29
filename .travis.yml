@@ -13,7 +13,7 @@ before_script:
   - mysql -e 'create database spring_boot'
 
 after_success:
-- mvn clean cobertura:cobertura coveralls:report
+  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
 
 notifications:
   email:
