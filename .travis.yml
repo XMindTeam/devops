@@ -18,6 +18,8 @@ mysql:
   encoding: utf8
 before_script:
   - mysql -u root -e 'create database spring_boot'
+  - mysql -u root -e 'CREATE TABLE t_character (id int(11) NOT NULL AUTO_INCREMENT, name varchar(200) DEFAULT NULL, PRIMARY KEY (id)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8'
+  - mysql -u root -e 'CREATE TABLE t_user (id int(11) NOT NULL AUTO_INCREMENT,user_name varchar(200) DEFAULT NULL,user_age int(11) DEFAULT NULL,PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8'
 after_success:
   - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
 
