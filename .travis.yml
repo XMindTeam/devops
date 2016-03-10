@@ -18,7 +18,7 @@ addons:
     - mysql-client-core-5.6
     - mysql-client-5.6
 before_script:
-  - mysql -e 'create database spring_boot'
+  - mysql -u root -e 'create database spring_boot'
 after_success:
   - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
 
