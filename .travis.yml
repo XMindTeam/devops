@@ -9,14 +9,14 @@ branches:
     - develop
 services:
   - mysql
-dist: trusty
-sudo: required
-addons:
-  apt:
-    packages:
-    - mysql-server-5.6
-    - mysql-client-core-5.6
-    - mysql-client-5.6
+env:
+  - DB=mysql
+    
+mysql:
+  database: es
+  username: root
+  password :cKp123654pKc
+  encoding: utf8
 before_script:
   - mysql -u root -e 'create database spring_boot'
 after_success:
